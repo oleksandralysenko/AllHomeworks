@@ -1,8 +1,9 @@
 import React from "react";
 import { useState } from "react";
 import { Button, Input } from "rsuite";
+// @ts-ignore
 import styles from "../sashaInputs/sashaInputs.module.css";
-import InputsPreview from "./inputsPreview";
+import InputsPreview from "./InputsPreview.tsx";
 
 const SashaInputs = () => {
   const [edit, setEdit] = useState(false);
