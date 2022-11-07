@@ -1,0 +1,14 @@
+.btn{
+    background-color: violet;
+    color: aliceblue;
+    height: 50px;
+    width: 150px;
+    margin: 20px;
+    font-size: larger;
+}
+
+.container{
+    margin: 20px;
+    font-size: larger;
+    font-weight: bolder;
+}

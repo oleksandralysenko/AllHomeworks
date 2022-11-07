@@ -1,0 +1,12 @@
+.container{
+    height: 50px;
+    background-color: lightgoldenrodyellow;
+    color: lightpink;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container a{
+    color: red;
+}
