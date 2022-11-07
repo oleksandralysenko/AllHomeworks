@@ -6,9 +6,9 @@ import { RedirectRoutes, SashaRoutes } from "../../../common/routes/AppRoutes";
 import SashaCV from "../sashaCV/SashaCV";
 import SashaLift from "../sashaLiftState/SashaLift";
 import SashaComp from "../sashaComponent/SashaComp";
-import InputsParent from "../sashaInputs/inputsParent";
-import FormsParent from "../sashaForms/FormsParent";
-import SashaAxios from "../axios/SashaAxios";
+import InputsParent from "../sashaInputs/InputsParent.tsx";
+import FormsParent from "../sashaForms/FormsParent.tsx";
+import SashaAxios from "../axios/SashaAxios.tsx";
 import SashaRedux from "../redux/SashaRedux";
 import SashaReduxThunk from "../reduxThunk/ReduxThunk";
 

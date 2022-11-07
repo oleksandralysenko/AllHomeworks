@@ -1,8 +1,16 @@
 import React from "react";
+// @ts-ignore
 import styles from "../sashaInputs/sashaInputs.module.css"
 
+export interface Props {
+    Name: string
+    Surname: string
+    Age: string
+    Role: string
+    Job: string
+}
 
-const InputsPreview = ({Name, Surname, Age, Role, Job}) => {
+const InputsPreview = ({Name, Surname, Age, Role, Job}:Props) => {
     console.log("inputs preview")
         return(
             <div className={styles.previewContainer}>

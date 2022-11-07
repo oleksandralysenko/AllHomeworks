@@ -1,10 +1,17 @@
+//@ts-ignore
 import {React, useState } from "react";
+//@ts-ignore
 import styles from "../sashaForms/SashaForms.module.css";
-import FormContainer from "../sashaForms/SashaForms";
+//@ts-ignore
+import FormContainer from "./SashaForms.tsx";
+
+export interface I {
+  text: string
+}
 
 const FormsParent = () => {
-  const [formValue, setFormValue] = useState({ text: "" });
-  const [edit, setEdit] = useState(false);
+  const [formValue, setFormValue] = useState<I>({ text: "" });
+  const [edit, setEdit] = useState<boolean>(false);
   return (
     <div className={styles.container}>
       <FormContainer formValue={formValue} setFormValue={setFormValue} edit = {edit} setEdit = {setEdit}/>

@@ -1,11 +1,15 @@
+//@ts-ignore
 import styles from "../sashaForms/SashaForms.module.css";
+//@ts-ignore
 import { React, useState } from "react";
+//@ts-ignore
+import { I } from "./FormsParent.tsx"
 
-const FormContainer = ({ setFormValue, setEdit}) => {
-  const [inputValue, setInputValue] = useState({ text: "" });
+const FormContainer = ({ setFormValue, setEdit}:any) => {
+  const [inputValue, setInputValue] = useState<I>({ text: "" });
   const handleSubmit = () => {
     setFormValue(inputValue)
-    setEdit((prevState) => !prevState)
+    setEdit((prevState:boolean) => !prevState)
   }
   return (
     <>

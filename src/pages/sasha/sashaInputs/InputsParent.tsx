@@ -1,5 +1,5 @@
 import React from "react";
-import SashaInputs from "./sashaInputs";
+import SashaInputs from "./SashaInputs.tsx";
 // import InputsPreview from "./inputsPreview"
 
 const InputsParent = () => {
