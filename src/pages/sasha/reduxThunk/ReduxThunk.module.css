@@ -12,3 +12,9 @@
     font-size: larger;
     font-weight: bolder;
 }
+
+.bigContainer{
+ display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

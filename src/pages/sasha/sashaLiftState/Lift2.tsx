@@ -1,7 +1,14 @@
+//@ts-ignore
 import React, { useState } from "react";
+//@ts-ignore
 import styles from "../sashaLiftState/SashaLift.module.css";
 
-const SashaLift2 = ({ fOnClick, fColor }) => {
+export interface Props{
+  fOnClick: (fColor: string) => void,
+  fColor: string
+}
+
+const SashaLift2 = ({ fOnClick, fColor }:Props) => {
   console.log("lift2");
   return (
     <div>

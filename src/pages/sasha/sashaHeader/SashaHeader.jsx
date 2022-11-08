@@ -4,13 +4,13 @@ import styles from "../sashaHeader/SashaHeader.module.css";
 import { RedirectRoutes, SashaRoutes } from "../../../common/routes/AppRoutes";
 
 import SashaCV from "../sashaCV/SashaCV";
-import SashaLift from "../sashaLiftState/SashaLift";
+import SashaLift from "../sashaLiftState/SashaLift.tsx";
 import SashaComp from "../sashaComponent/SashaComp";
 import InputsParent from "../sashaInputs/InputsParent.tsx";
 import FormsParent from "../sashaForms/FormsParent.tsx";
 import SashaAxios from "../axios/SashaAxios.tsx";
-import SashaRedux from "../redux/SashaRedux";
-import SashaReduxThunk from "../reduxThunk/ReduxThunk";
+import SashaRedux from "../redux/SashaRedux.tsx";
+import SashaReduxThunk from "../reduxThunk/ReduxThunk.tsx";
 
 const MainSashaHeader = () => 
 (
