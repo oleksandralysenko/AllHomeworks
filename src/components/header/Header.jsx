@@ -12,7 +12,7 @@ const Header = () => (
       <span>Main</span> */}
       {/* </Link> */}
       <Link to={AppRoutes.SASHA}>
-      <span>Sasha</span>
+      <span>Tap to open Sasha's page...</span>
       </Link>
       {/* <Link to={AppRoutes.MENTOR}>
       <span>Mentor</span>

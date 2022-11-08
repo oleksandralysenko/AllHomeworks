@@ -4,23 +4,23 @@ import { getCharacter, getMore } from "./ApiCalls";
 //ts@ignore
 import styles from "./SashaAxios.module.css";
 
-export interface Info {  
-    count: number
-    pages: number
-    next: string
-    prev: null  
+export interface Info {
+  count: number;
+  pages: number;
+  next: string;
+  prev: null;
 }
 export interface Data {
-  items: { 
+  items: {
     info: {
-    count: number,
-    pages: number,
-    next: string,
-    prev: null,
-  },
-  results: [], 
-}  
-  }
+      count: number;
+      pages: number;
+      next: string;
+      prev: null;
+    };
+    results: [];
+  };
+}
 
 const SashaAxios = () => {
   const [data, setData] = useState<any>();
@@ -48,21 +48,21 @@ const SashaAxios = () => {
   }, [data]);
 
   return (
-    <div>
-      <h3>AXIOS</h3>
-      {data &&
-        data.results.map((item:any) => (
-          <div key={item.id} className={styles.container}>
-            <p> {item.name} </p>
-            <img src={item.image} alt="" />
-          </div>
-        ))}
+    <div className={styles.mainContainer}>
+      <h1>AXIOS</h1>
+      <div className={styles.itemContainer}>
+        {data &&
+          data.results.map((item: any) => (
+            <div key={item.id} className={styles.container}>
+              <p> {item.name} </p>
+              <img src={item.image} alt="" />
+            </div>
+          ))}
+      </div>
       {data?.info?.next !== null && (
-        
         <button className={styles.btn} onClick={() => getNext()}>
           Get More
         </button>
-        
       )}
     </div>
   );

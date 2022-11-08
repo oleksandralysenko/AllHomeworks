@@ -12,3 +12,24 @@
     font-size: larger;
     font-weight: bolder;
 }
+
+.itemContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .itemContainer p {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .mainContainer h1 {
+    color: lime;
+  }

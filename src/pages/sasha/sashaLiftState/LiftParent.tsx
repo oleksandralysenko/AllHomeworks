@@ -1,7 +1,9 @@
+//@ts-ignore
 import React from "react";
+//@ts-ignore
 import styles from "../sashaLiftState/SashaLift.module.css";
-import Lift1 from "./Lift1";
-import Lift2 from "./Lift2";
+import Lift1 from "./Lift1.tsx";
+import Lift2 from "./Lift2.tsx";
 import { useState } from "react";
 
 function randomColor() {

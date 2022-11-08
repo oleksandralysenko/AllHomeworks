@@ -1,16 +1,36 @@
-.btn{
-    background-color: pink;
-    color: aliceblue;
-    height: 50px;
-    width: 150px;
-    margin: 20px;
-    font-size: larger;
+.btn {
+  background-color: lime;
+  color: aliceblue;
+  height: 50px;
+  width: 150px;
+  margin: 20px;
+  font-size: larger;
 }
 
-.container{
-    margin: 20px;
-    font-size: larger;
-    font-weight: bolder;
+.container {
+  margin: 20px;
+  font-size: larger;
+  font-weight: bolder;
 }
 
+.itemContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 
+.itemContainer p{
+  margin-bottom: 10px;
+  text-align: center;
+
+}
+
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+}
+
+.mainContainer h1{
+    color: violet;
+}
