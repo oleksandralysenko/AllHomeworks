@@ -52,9 +52,9 @@ const SashaReduxThunk = () => {
   }, [Sasha]);
 
   return (
-    <div>
-      <h3>Redux Thunk</h3>
-      <div className={styles.bigContainer}>
+    <div className={styles.mainContainer}>
+      <h1>Redux Thunk</h1>
+      <div className={styles.itemContainer}>
       {Sasha &&
         Sasha?.map((item) => (
           <div key={item.id} className={styles.container}>
